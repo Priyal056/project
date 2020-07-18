@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+        #container
+        {
+            width:800px;
+            overflow: hidden;
+        }
+        #sliderbox
+        {
+            position:relative;
+            width:3200px;
+            animation-name:slideranimation;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        #sliderbox img
+        {
+            float: left;
+        }
+        @keyframes slideranimation {
+            0%
+            {
+                left:0px;
+            }
+            20%
+            {
+                left:0px;
+            }
+            25%
+            {
+                left:-800px;
+            }
+            45%
+            {
+                left:-800px;
+            }
+            50%
+            {
+                left:-1600px;
+            }
+            70%
+            {
+                left:-1600px;
+            }
+            75%
+            {
+                left:-2400px;
+            }
+            
+        }
+    </style>
     <meta charset="utf-8">
     <title> Home </title>
     <link rel="stylesheet" href="CSS/style.css">
@@ -22,17 +72,18 @@
     <a id = "login" href = "login.html">SignUp/LogIn</a>
     </nav>
     
-    <article class="main"> 
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    </p>
-    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-    <p>Where does it come from?
-    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-        
-    </article>
-
+    
     </div>
+    <div id="container">
+                <div id="sliderbox">
+                <img src="imgs/bg1.jpg"/>
+                <img src="imgs/bg6.jpg"/>
+                <img src="imgs/lipstick.jpg"/>
+                <img src="imgs/makeup1.jpg"/>
+                
+                </div>
+            </div>
+    
 
 </body>
     
